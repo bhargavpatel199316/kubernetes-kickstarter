@@ -10,4 +10,5 @@ spec:
     - protocol: TCP
       port: 80       # Port in the service
       targetPort: 80 # Port in the pod
+      nodePort: 31007 # Port  exposed in Node. The service will be accessible from this port of node. (30000-32767 range)
   type: NodePort
